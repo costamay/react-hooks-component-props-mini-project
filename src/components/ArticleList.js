@@ -2,12 +2,13 @@ import React from "react";
 import Article from "./Article";
 
 function ArticleList({posts}){
-    const articleItem = posts.map((article) =>{
+    const articleItem = posts.map((post) =>{
       return  < Article 
-        key = {article.id}
-        title = {article.title}
-        date = {article.date}
-        preview = {article.preview}/>
+        key = {post.id}
+        title = {post.title}
+        date = {post.date}
+        preview = {post.preview}
+        minutes = {post.minutes}/>
 });
     return(
         <main>
